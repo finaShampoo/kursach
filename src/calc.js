@@ -36,5 +36,5 @@ export default function calc(functionString, a_b, eps) {
     }
     return xn;
   }
-  return newtonForOne(_f, _df, _d2f, a_b, eps);
+  return newtonForOne(_f, _df, _d2f, [Number(a_b[0]), Number(a_b[1])], Number(eps));
 }
